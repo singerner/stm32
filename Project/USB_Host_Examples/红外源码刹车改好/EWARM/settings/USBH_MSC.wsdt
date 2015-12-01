@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>USBH_MSC/STM3210C-EVAL_USBH-FS</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>146</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>980</ColumnWidth1><ColumnWidth2>261</ColumnWidth2><ColumnWidth3>65</ColumnWidth3></Build>
+    </Static>
+    <Windows>
+      
+      
+    <Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-6018-17957</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>USBH_MSC</ExpandedNode><ExpandedNode>USBH_MSC/App</ExpandedNode><ExpandedNode>USBH_MSC/USB_Host</ExpandedNode><ExpandedNode>USBH_MSC/USB_Host/Driver</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-12061-18048</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd3></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\src\main.c</Filename><XPos>0</XPos><YPos>108</YPos><SelStart>2939</SelStart><SelEnd>2939</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\Libraries\STM32_USB_HOST_Library\Core\src\usbh_core.c</Filename><XPos>0</XPos><YPos>153</YPos><SelStart>3792</SelStart><SelEnd>3792</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\src\usb_bsp.c</Filename><XPos>0</XPos><YPos>181</YPos><SelStart>3453</SelStart><SelEnd>3453</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\src\usbh_usr.c</Filename><XPos>0</XPos><YPos>77</YPos><SelStart>2217</SelStart><SelEnd>2217</SelEnd></Tab><ActiveTab>3</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\Libraries\STM32_USB_OTG_Driver\src\usb_core.c</Filename><XPos>0</XPos><YPos>405</YPos><SelStart>321</SelStart><SelEnd>321</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\Libraries\STM32_USB_OTG_Driver\src\usb_hcd_int.c</Filename><XPos>0</XPos><YPos>273</YPos><SelStart>5802</SelStart><SelEnd>5818</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-01fdffa8><key>iaridepm.enu1</key></Toolbar-01fdffa8></Sizes></Row0></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>466</Bottom><Right>220</Right><x>-2</x><y>-2</y><xscreen>148</xscreen><yscreen>177</yscreen><sizeHorzCX>108346</sizeHorzCX><sizeHorzCY>258017</sizeHorzCY><sizeVertCX>162518</sizeVertCX><sizeVertCY>682216</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>175</Bottom><Right>1368</Right><x>-2</x><y>-2</y><xscreen>1370</xscreen><yscreen>177</yscreen><sizeHorzCX>1002928</sizeHorzCX><sizeHorzCY>258017</sizeHorzCY><sizeVertCX>108346</sizeVertCX><sizeVertCY>258017</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

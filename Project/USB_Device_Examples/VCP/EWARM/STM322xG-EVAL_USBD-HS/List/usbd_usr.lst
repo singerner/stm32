@@ -1,0 +1,358 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.30.1.53127/W32 for ARM     02/Apr/2015  20:07:19 #
+# Copyright 1999-2011 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  C:\Users\Administrator\Desktop\stm32\STM32_USB-Host-Devi #
+#                    ce_Lib_V2.1.0\Project\USB_Device_Examples\VCP\src\usbd_u #
+#                    sr.c                                                     #
+#    Command line =  C:\Users\Administrator\Desktop\stm32\STM32_USB-Host-Devi #
+#                    ce_Lib_V2.1.0\Project\USB_Device_Examples\VCP\src\usbd_u #
+#                    sr.c -D USE_STDPERIPH_DRIVER -D STM32F2XX -D             #
+#                    USE_STM322xG_EVAL -D USE_USB_OTG_HS -D USE_ULPI_PHY      #
+#                    -lcN C:\Users\Administrator\Desktop\stm32\STM32_USB-Host #
+#                    -Device_Lib_V2.1.0\Project\USB_Device_Examples\VCP\EWARM #
+#                    \STM322xG-EVAL_USBD-HS\List\ -o                          #
+#                    C:\Users\Administrator\Desktop\stm32\STM32_USB-Host-Devi #
+#                    ce_Lib_V2.1.0\Project\USB_Device_Examples\VCP\EWARM\STM3 #
+#                    22xG-EVAL_USBD-HS\Obj\ --debug --endian=little           #
+#                    --cpu=Cortex-M3 -e --fpu=None --dlib_config "D:\IAR      #
+#                    Systems\Embedded Workbench 6.0\arm\INC\c\DLib_Config_Ful #
+#                    l.h" -I C:\Users\Administrator\Desktop\stm32\STM32_USB-H #
+#                    ost-Device_Lib_V2.1.0\Project\USB_Device_Examples\VCP\EW #
+#                    ARM\..\ -I C:\Users\Administrator\Desktop\stm32\STM32_US #
+#                    B-Host-Device_Lib_V2.1.0\Project\USB_Device_Examples\VCP #
+#                    \EWARM\..\inc\ -I C:\Users\Administrator\Desktop\stm32\S #
+#                    TM32_USB-Host-Device_Lib_V2.1.0\Project\USB_Device_Examp #
+#                    les\VCP\EWARM\..\..\..\..\Libraries\CMSIS\Device\ST\STM3 #
+#                    2F2xx\Include\ -I C:\Users\Administrator\Desktop\stm32\S #
+#                    TM32_USB-Host-Device_Lib_V2.1.0\Project\USB_Device_Examp #
+#                    les\VCP\EWARM\..\..\..\..\Libraries\STM32F2xx_StdPeriph_ #
+#                    Driver\inc\ -I C:\Users\Administrator\Desktop\stm32\STM3 #
+#                    2_USB-Host-Device_Lib_V2.1.0\Project\USB_Device_Examples #
+#                    \VCP\EWARM\..\..\..\..\Libraries\STM32_USB_OTG_Driver\in #
+#                    c\ -I C:\Users\Administrator\Desktop\stm32\STM32_USB-Hos #
+#                    t-Device_Lib_V2.1.0\Project\USB_Device_Examples\VCP\EWAR #
+#                    M\..\..\..\..\Libraries\STM32_USB_Device_Library\Core\in #
+#                    c\ -I C:\Users\Administrator\Desktop\stm32\STM32_USB-Hos #
+#                    t-Device_Lib_V2.1.0\Project\USB_Device_Examples\VCP\EWAR #
+#                    M\..\..\..\..\Libraries\STM32_USB_Device_Library\Class\c #
+#                    dc\inc\ -I C:\Users\Administrator\Desktop\stm32\STM32_US #
+#                    B-Host-Device_Lib_V2.1.0\Project\USB_Device_Examples\VCP #
+#                    \EWARM\..\..\..\..\Utilities\STM32_EVAL\ -I              #
+#                    C:\Users\Administrator\Desktop\stm32\STM32_USB-Host-Devi #
+#                    ce_Lib_V2.1.0\Project\USB_Device_Examples\VCP\EWARM\..\. #
+#                    .\..\..\Utilities\STM32_EVAL\Common\ -I                  #
+#                    C:\Users\Administrator\Desktop\stm32\STM32_USB-Host-Devi #
+#                    ce_Lib_V2.1.0\Project\USB_Device_Examples\VCP\EWARM\..\. #
+#                    .\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\ -Ohs         #
+#                    --use_c++_inline -I "D:\IAR Systems\Embedded Workbench   #
+#                    6.0\arm\CMSIS\Include\"                                  #
+#    List file    =  C:\Users\Administrator\Desktop\stm32\STM32_USB-Host-Devi #
+#                    ce_Lib_V2.1.0\Project\USB_Device_Examples\VCP\EWARM\STM3 #
+#                    22xG-EVAL_USBD-HS\List\usbd_usr.lst                      #
+#    Object file  =  C:\Users\Administrator\Desktop\stm32\STM32_USB-Host-Devi #
+#                    ce_Lib_V2.1.0\Project\USB_Device_Examples\VCP\EWARM\STM3 #
+#                    22xG-EVAL_USBD-HS\Obj\usbd_usr.o                         #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Users\Administrator\Desktop\stm32\STM32_USB-Host-Device_Lib_V2.1.0\Project\USB_Device_Examples\VCP\src\usbd_usr.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    usbd_usr.c
+      4            * @author  MCD Application Team
+      5            * @version V1.1.0
+      6            * @date    19-March-2012
+      7            * @brief   This file includes the user application layer
+      8            ******************************************************************************
+      9            * @attention
+     10            *
+     11            * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
+     12            *
+     13            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     14            * You may not use this file except in compliance with the License.
+     15            * You may obtain a copy of the License at:
+     16            *
+     17            *        http://www.st.com/software_license_agreement_liberty_v2
+     18            *
+     19            * Unless required by applicable law or agreed to in writing, software 
+     20            * distributed under the License is distributed on an "AS IS" BASIS, 
+     21            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     22            * See the License for the specific language governing permissions and
+     23            * limitations under the License.
+     24            *
+     25            ******************************************************************************
+     26            */ 
+     27          
+     28          /* Includes ------------------------------------------------------------------*/
+     29          #include "usbd_usr.h"
+     30          #include "usbd_ioreq.h"
+     31          #include "lcd_log.h"
+     32          
+     33          /** @addtogroup STM32_USB_OTG_DEVICE_LIBRARY
+     34          * @{
+     35          */
+     36          
+     37          /** @defgroup USBD_USR 
+     38          * @brief    This file includes the user application layer
+     39          * @{
+     40          */ 
+     41          
+     42          /** @defgroup USBD_USR_Private_TypesDefinitions
+     43          * @{
+     44          */ 
+     45          /**
+     46          * @}
+     47          */ 
+     48          
+     49          
+     50          /** @defgroup USBD_USR_Private_Defines
+     51          * @{
+     52          */ 
+     53          /**
+     54          * @}
+     55          */ 
+     56          
+     57          
+     58          /** @defgroup USBD_USR_Private_Macros
+     59          * @{
+     60          */ 
+     61          /**
+     62          * @}
+     63          */ 
+     64          
+     65          
+     66          /** @defgroup USBD_USR_Private_Variables
+     67          * @{
+     68          */ 
+     69          
+     70          USBD_Usr_cb_TypeDef USR_cb =
+     71          {
+     72            USBD_USR_Init,
+     73            USBD_USR_DeviceReset,
+     74            USBD_USR_DeviceConfigured,
+     75            USBD_USR_DeviceSuspended,
+     76            USBD_USR_DeviceResumed,
+     77            
+     78            
+     79            USBD_USR_DeviceConnected,
+     80            USBD_USR_DeviceDisconnected,    
+     81          };
+     82          
+     83          /**
+     84          * @}
+     85          */
+     86          
+     87          /** @defgroup USBD_USR_Private_Constants
+     88          * @{
+     89          */ 
+     90          
+     91          /**
+     92          * @}
+     93          */
+     94          
+     95          
+     96          
+     97          /** @defgroup USBD_USR_Private_FunctionPrototypes
+     98          * @{
+     99          */ 
+    100          /**
+    101          * @}
+    102          */ 
+    103          
+    104          
+    105          /** @defgroup USBD_USR_Private_Functions
+    106          * @{
+    107          */ 
+    108          
+    109          /**
+    110          * @brief  USBD_USR_Init 
+    111          *         Displays the message on LCD for host lib initialization
+    112          * @param  None
+    113          * @retval None
+    114          */
+    115          void USBD_USR_Init(void)
+    116          {  
+    117            /* Initialize LEDs */
+    118            STM_EVAL_LEDInit(LED1);
+    119            STM_EVAL_LEDInit(LED2);
+    120            STM_EVAL_LEDInit(LED3);
+    121            STM_EVAL_LEDInit(LED4);   
+    122            
+    123            /* Initialize the LCD */
+    124          #if defined (USE_STM322xG_EVAL)
+    125            STM322xG_LCD_Init();
+    126          #elif defined(USE_STM324xG_EVAL)
+    127            STM324xG_LCD_Init();
+    128          #elif defined (USE_STM3210C_EVAL)
+    129            STM3210C_LCD_Init();
+    130          #else
+    131           #error "Missing define: Evaluation board (ie. USE_STM322xG_EVAL)"
+    132          #endif
+    133          
+    134            LCD_LOG_Init();
+    135            
+    136          #ifdef USE_USB_OTG_HS 
+    137            LCD_LOG_SetHeader(" USB OTG HS VCP Device");
+    138          #else
+    139            LCD_LOG_SetHeader(" USB OTG FS VCP Device");
+    140          #endif
+    141            LCD_UsrLog("> USB device library started.\n"); 
+    142            LCD_LOG_SetFooter ("     USB Device Library v1.1.0" );
+    143          }
+    144          
+    145          /**
+    146          * @brief  USBD_USR_DeviceReset 
+    147          *         Displays the message on LCD on device Reset Event
+    148          * @param  speed : device speed
+    149          * @retval None
+    150          */
+    151          void USBD_USR_DeviceReset(uint8_t speed )
+    152          {
+    153           switch (speed)
+    154           {
+    155             case USB_OTG_SPEED_HIGH: 
+    156               LCD_LOG_SetFooter ("     USB Device Library v1.1.0 [HS]" );
+    157               break;
+    158          
+    159            case USB_OTG_SPEED_FULL: 
+    160               LCD_LOG_SetFooter ("     USB Device Library v1.1.0 [FS]" );
+    161               break;
+    162           default:
+    163               LCD_LOG_SetFooter ("     USB Device Library v1.1.0 [??]" );
+    164           }
+    165          }
+    166          
+    167          
+    168          /**
+    169          * @brief  USBD_USR_DeviceConfigured
+    170          *         Displays the message on LCD on device configuration Event
+    171          * @param  None
+    172          * @retval Staus
+    173          */
+    174          void USBD_USR_DeviceConfigured (void)
+    175          {
+    176            LCD_UsrLog("> VCP Interface configured.\n");
+    177          }
+    178          
+    179          /**
+    180          * @brief  USBD_USR_DeviceSuspended 
+    181          *         Displays the message on LCD on device suspend Event
+    182          * @param  None
+    183          * @retval None
+    184          */
+    185          void USBD_USR_DeviceSuspended(void)
+    186          {
+    187            LCD_UsrLog("> USB Device in Suspend Mode.\n");
+    188            /* Users can do their application actions here for the USB-Reset */
+    189          }
+    190          
+    191          
+    192          /**
+    193          * @brief  USBD_USR_DeviceResumed 
+    194          *         Displays the message on LCD on device resume Event
+    195          * @param  None
+    196          * @retval None
+    197          */
+    198          void USBD_USR_DeviceResumed(void)
+    199          {
+    200              LCD_UsrLog("> USB Device in Idle Mode.\n");
+    201            /* Users can do their application actions here for the USB-Reset */
+    202          }
+    203          
+    204          
+    205          /**
+    206          * @brief  USBD_USR_DeviceConnected
+    207          *         Displays the message on LCD on device connection Event
+    208          * @param  None
+    209          * @retval Staus
+    210          */
+    211          void USBD_USR_DeviceConnected (void)
+    212          {
+    213            LCD_UsrLog("> USB Device Connected.\n");
+    214          }
+    215          
+    216          
+    217          /**
+    218          * @brief  USBD_USR_DeviceDisonnected
+    219          *         Displays the message on LCD on device disconnection Event
+    220          * @param  None
+    221          * @retval Staus
+    222          */
+    223          void USBD_USR_DeviceDisconnected (void)
+    224          {
+    225            LCD_UsrLog("> USB Device Disconnected.\n");
+    226          }
+    227          /**
+    228          * @}
+    229          */ 
+    230          
+    231          /**
+    232          * @}
+    233          */ 
+    234          
+    235          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+        0  USBD_USR_DeviceConfigured
+             0 -> printf
+        0  USBD_USR_DeviceConnected
+             0 -> printf
+        0  USBD_USR_DeviceDisconnected
+             0 -> printf
+        0  USBD_USR_DeviceReset
+             0 -> LCD_LOG_SetFooter
+        0  USBD_USR_DeviceResumed
+             0 -> printf
+        0  USBD_USR_DeviceSuspended
+             0 -> printf
+        8  USBD_USR_Init
+             8 -> LCD_LOG_Init
+             0 -> LCD_LOG_SetFooter
+             8 -> LCD_LOG_SetHeader
+             8 -> STM322xG_LCD_Init
+             8 -> STM_EVAL_LEDInit
+             8 -> printf
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      32  ?<Constant "     USB Device Libra...">
+      36  ?<Constant "     USB Device Libra...">_1
+      36  ?<Constant "     USB Device Libra...">_2
+      36  ?<Constant "     USB Device Libra...">_3
+      24  ?<Constant " USB OTG HS VCP Device">
+      28  ?<Constant "> USB Device Connected.\n">
+      28  ?<Constant "> USB Device Disconne...">
+      28  ?<Constant "> USB Device in Idle ...">
+      32  ?<Constant "> USB Device in Suspe...">
+      32  ?<Constant "> USB device library ...">
+      32  ?<Constant "> VCP Interface confi...">
+       4  ??DataTable16
+      16  USBD_USR_DeviceConfigured
+      16  USBD_USR_DeviceConnected
+      16  USBD_USR_DeviceDisconnected
+      32  USBD_USR_DeviceReset
+      16  USBD_USR_DeviceResumed
+      16  USBD_USR_DeviceSuspended
+      74  USBD_USR_Init
+      28  USR_cb
+
+ 
+  28 bytes in section .data
+ 534 bytes in section .text
+ 
+ 534 bytes of CODE memory
+  28 bytes of DATA memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,10 @@
+#ifndef _UART_H
+#define _UART_H
+
+#include "include.h"
+
+void uart_init(uint32_t baud);
+
+#endif
+
+

@@ -1,0 +1,261 @@
+###############################################################################
+#                                                                             #
+# IAR ANSI C/C++ Compiler V6.30.1.53127/W32 for ARM     02/Apr/2015  20:07:14 #
+# Copyright 1999-2011 IAR Systems AB.                                         #
+#                                                                             #
+#    Cpu mode     =  thumb                                                    #
+#    Endian       =  little                                                   #
+#    Source file  =  C:\Users\Administrator\Desktop\stm32\STM32_USB-Host-Devi #
+#                    ce_Lib_V2.1.0\Project\USB_Device_Examples\VCP\src\app.c  #
+#    Command line =  C:\Users\Administrator\Desktop\stm32\STM32_USB-Host-Devi #
+#                    ce_Lib_V2.1.0\Project\USB_Device_Examples\VCP\src\app.c  #
+#                    -D USE_STDPERIPH_DRIVER -D STM32F2XX -D                  #
+#                    USE_STM322xG_EVAL -D USE_USB_OTG_HS -D USE_ULPI_PHY      #
+#                    -lcN C:\Users\Administrator\Desktop\stm32\STM32_USB-Host #
+#                    -Device_Lib_V2.1.0\Project\USB_Device_Examples\VCP\EWARM #
+#                    \STM322xG-EVAL_USBD-HS\List\ -o                          #
+#                    C:\Users\Administrator\Desktop\stm32\STM32_USB-Host-Devi #
+#                    ce_Lib_V2.1.0\Project\USB_Device_Examples\VCP\EWARM\STM3 #
+#                    22xG-EVAL_USBD-HS\Obj\ --debug --endian=little           #
+#                    --cpu=Cortex-M3 -e --fpu=None --dlib_config "D:\IAR      #
+#                    Systems\Embedded Workbench 6.0\arm\INC\c\DLib_Config_Ful #
+#                    l.h" -I C:\Users\Administrator\Desktop\stm32\STM32_USB-H #
+#                    ost-Device_Lib_V2.1.0\Project\USB_Device_Examples\VCP\EW #
+#                    ARM\..\ -I C:\Users\Administrator\Desktop\stm32\STM32_US #
+#                    B-Host-Device_Lib_V2.1.0\Project\USB_Device_Examples\VCP #
+#                    \EWARM\..\inc\ -I C:\Users\Administrator\Desktop\stm32\S #
+#                    TM32_USB-Host-Device_Lib_V2.1.0\Project\USB_Device_Examp #
+#                    les\VCP\EWARM\..\..\..\..\Libraries\CMSIS\Device\ST\STM3 #
+#                    2F2xx\Include\ -I C:\Users\Administrator\Desktop\stm32\S #
+#                    TM32_USB-Host-Device_Lib_V2.1.0\Project\USB_Device_Examp #
+#                    les\VCP\EWARM\..\..\..\..\Libraries\STM32F2xx_StdPeriph_ #
+#                    Driver\inc\ -I C:\Users\Administrator\Desktop\stm32\STM3 #
+#                    2_USB-Host-Device_Lib_V2.1.0\Project\USB_Device_Examples #
+#                    \VCP\EWARM\..\..\..\..\Libraries\STM32_USB_OTG_Driver\in #
+#                    c\ -I C:\Users\Administrator\Desktop\stm32\STM32_USB-Hos #
+#                    t-Device_Lib_V2.1.0\Project\USB_Device_Examples\VCP\EWAR #
+#                    M\..\..\..\..\Libraries\STM32_USB_Device_Library\Core\in #
+#                    c\ -I C:\Users\Administrator\Desktop\stm32\STM32_USB-Hos #
+#                    t-Device_Lib_V2.1.0\Project\USB_Device_Examples\VCP\EWAR #
+#                    M\..\..\..\..\Libraries\STM32_USB_Device_Library\Class\c #
+#                    dc\inc\ -I C:\Users\Administrator\Desktop\stm32\STM32_US #
+#                    B-Host-Device_Lib_V2.1.0\Project\USB_Device_Examples\VCP #
+#                    \EWARM\..\..\..\..\Utilities\STM32_EVAL\ -I              #
+#                    C:\Users\Administrator\Desktop\stm32\STM32_USB-Host-Devi #
+#                    ce_Lib_V2.1.0\Project\USB_Device_Examples\VCP\EWARM\..\. #
+#                    .\..\..\Utilities\STM32_EVAL\Common\ -I                  #
+#                    C:\Users\Administrator\Desktop\stm32\STM32_USB-Host-Devi #
+#                    ce_Lib_V2.1.0\Project\USB_Device_Examples\VCP\EWARM\..\. #
+#                    .\..\..\Utilities\STM32_EVAL\STM322xG_EVAL\ -Ohs         #
+#                    --use_c++_inline -I "D:\IAR Systems\Embedded Workbench   #
+#                    6.0\arm\CMSIS\Include\"                                  #
+#    List file    =  C:\Users\Administrator\Desktop\stm32\STM32_USB-Host-Devi #
+#                    ce_Lib_V2.1.0\Project\USB_Device_Examples\VCP\EWARM\STM3 #
+#                    22xG-EVAL_USBD-HS\List\app.lst                           #
+#    Object file  =  C:\Users\Administrator\Desktop\stm32\STM32_USB-Host-Devi #
+#                    ce_Lib_V2.1.0\Project\USB_Device_Examples\VCP\EWARM\STM3 #
+#                    22xG-EVAL_USBD-HS\Obj\app.o                              #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Users\Administrator\Desktop\stm32\STM32_USB-Host-Device_Lib_V2.1.0\Project\USB_Device_Examples\VCP\src\app.c
+      1          /**
+      2            ******************************************************************************
+      3            * @file    app.c
+      4            * @author  MCD Application Team
+      5            * @version V1.1.0
+      6            * @date    19-March-2012
+      7            * @brief   This file provides all the Application firmware functions.
+      8            ******************************************************************************
+      9            * @attention
+     10            *
+     11            * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
+     12            *
+     13            * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
+     14            * You may not use this file except in compliance with the License.
+     15            * You may obtain a copy of the License at:
+     16            *
+     17            *        http://www.st.com/software_license_agreement_liberty_v2
+     18            *
+     19            * Unless required by applicable law or agreed to in writing, software 
+     20            * distributed under the License is distributed on an "AS IS" BASIS, 
+     21            * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     22            * See the License for the specific language governing permissions and
+     23            * limitations under the License.
+     24            *
+     25            ******************************************************************************
+     26            */ 
+     27          
+     28          /* Includes ------------------------------------------------------------------*/ 
+     29          
+     30          #include "usbd_cdc_core.h"
+     31          #include "usbd_usr.h"
+     32          #include "usb_conf.h"
+     33          #include "usbd_desc.h"
+     34          
+     35          /** @addtogroup STM32_USB_OTG_DEVICE_LIBRARY
+     36            * @{
+     37            */
+     38          
+     39          
+     40          /** @defgroup APP_VCP 
+     41            * @brief Mass storage application module
+     42            * @{
+     43            */ 
+     44          
+     45          /** @defgroup APP_VCP_Private_TypesDefinitions
+     46            * @{
+     47            */ 
+     48          /**
+     49            * @}
+     50            */ 
+     51          
+     52          
+     53          /** @defgroup APP_VCP_Private_Defines
+     54            * @{
+     55            */ 
+     56          
+     57          /**
+     58            * @}
+     59            */ 
+     60          
+     61          
+     62          /** @defgroup APP_VCP_Private_Macros
+     63            * @{
+     64            */ 
+     65          /**
+     66            * @}
+     67            */ 
+     68          
+     69          
+     70          /** @defgroup APP_VCP_Private_Variables
+     71            * @{
+     72            */ 
+     73            
+     74          #ifdef USB_OTG_HS_INTERNAL_DMA_ENABLED
+     75            #if defined ( __ICCARM__ ) /*!< IAR Compiler */
+     76              #pragma data_alignment=4   
+     77            #endif
+     78          #endif /* USB_OTG_HS_INTERNAL_DMA_ENABLED */
+     79             
+     80          __ALIGN_BEGIN USB_OTG_CORE_HANDLE    USB_OTG_dev __ALIGN_END ;
+     81          
+     82          /**
+     83            * @}
+     84            */ 
+     85          
+     86          
+     87          /** @defgroup APP_VCP_Private_FunctionPrototypes
+     88            * @{
+     89            */ 
+     90          /**
+     91            * @}
+     92            */ 
+     93          
+     94          
+     95          /** @defgroup APP_VCP_Private_Functions
+     96            * @{
+     97            */ 
+     98          
+     99          /**
+    100            * @brief  Program entry point
+    101            * @param  None
+    102            * @retval None
+    103            */
+    104          int main(void)
+    105          {
+    106            __IO uint32_t i = 0;  
+    107          
+    108            /*!< At this stage the microcontroller clock setting is already configured, 
+    109            this is done through SystemInit() function which is called from startup
+    110            file (startup_stm32fxxx_xx.s) before to branch to application main.
+    111            To reconfigure the default setting of SystemInit() function, refer to
+    112            system_stm32fxxx.c file
+    113            */
+    114           
+    115            USBD_Init(&USB_OTG_dev,
+    116          #ifdef USE_USB_OTG_HS 
+    117                      USB_OTG_HS_CORE_ID,
+    118          #else            
+    119                      USB_OTG_FS_CORE_ID,
+    120          #endif  
+    121                      &USR_desc, 
+    122                      &USBD_CDC_cb, 
+    123                      &USR_cb);
+    124            
+    125            /* Main loop */
+    126            while (1)
+    127            {
+    128              if (i++ == 0x100000)
+    129              {
+    130                STM_EVAL_LEDToggle(LED1);
+    131                STM_EVAL_LEDToggle(LED2);
+    132                STM_EVAL_LEDToggle(LED3);
+    133                STM_EVAL_LEDToggle(LED4);
+    134                i = 0;
+    135              }
+    136            }
+    137          } 
+    138          
+    139          #ifdef USE_FULL_ASSERT
+    140          /**
+    141          * @brief  assert_failed
+    142          *         Reports the name of the source file and the source line number
+    143          *         where the assert_param error has occurred.
+    144          * @param  File: pointer to the source file name
+    145          * @param  Line: assert_param error line source number
+    146          * @retval None
+    147          */
+    148          void assert_failed(uint8_t* file, uint32_t line)
+    149          {
+    150            /* User can add his own implementation to report the file name and line number,
+    151            ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
+    152            
+    153            /* Infinite loop */
+    154            while (1)
+    155            {}
+    156          }
+    157          #endif
+    158          
+    159          /**
+    160            * @}
+    161            */ 
+    162          
+    163          
+    164          /**
+    165            * @}
+    166            */ 
+    167          
+    168          
+    169          /**
+    170            * @}
+    171            */ 
+    172          
+    173          /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       16  main
+             16 -> STM_EVAL_LEDToggle
+             16 -> USBD_Init
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+    1524  USB_OTG_dev
+      84  main
+
+ 
+ 1 524 bytes in section .bss
+    84 bytes in section .text
+ 
+    84 bytes of CODE memory
+ 1 524 bytes of DATA memory
+
+Errors: none
+Warnings: none
